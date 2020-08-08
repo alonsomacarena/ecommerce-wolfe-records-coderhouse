@@ -1,0 +1,22 @@
+body{
+    background-color: #27203a;
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+}
+
+.welcome{
+    color: #fe207b;
+    font-size: 3.5rem;
+    margin: 0 auto;
+    padding-top: 2em;
+    text-align: center;
+    line-height: 1.3em;
+}
+.subtitle{
+    color: #48c3b3;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding-top: 1.5em;
+    text-align: center;
+    line-height: 1.3em;
+}
