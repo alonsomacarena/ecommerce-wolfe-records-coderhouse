@@ -1,16 +1,24 @@
 import React from 'react';
 import './home.css'
-import NavBar from '../components/NavBar.js'
+import NavBar from '../components/NavBar/NavBar.js'
+import ItemCount from '../components/ItemCount/ItemCount.js'
 
-const welcome= "Bienvenido a la Tienda Virtual de Wolfe Records ! ";
-const subtitle="Encontra la mejor colección de vinilos de BA !"
+//const welcome= "Bienvenido a la Tienda Virtual de Wolfe Records ! ";
+//const subtitle="Encontra la mejor colección de vinilos de BA !"
+
+//<div className="container-welcome">
+//<p className="welcome"> {welcome}</p>
+//</div>
 
 function Home() {
     return (
       <>
       <NavBar />
-    <h1 className="welcome col-sm-10">{welcome}</h1>
-    <h2 className="subtitle col-sm-10">{subtitle}</h2>
+      <ItemCount
+      initial={0}
+      min={1}
+      max={4}
+      />
       </>
     );
   }

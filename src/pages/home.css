@@ -4,19 +4,17 @@ body{
     text-transform: uppercase;
 }
 
-.welcome{
-    color: #fe207b;
-    font-size: 3.5rem;
-    margin: 0 auto;
-    padding-top: 2em;
-    text-align: center;
-    line-height: 1.3em;
+/*.welcome{
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: bold;
+    display: inline-block;
+    padding-top: 0.5em;
 }
-.subtitle{
-    color: #48c3b3;
-    font-size: 2rem;
-    margin: 0 auto;
-    padding-top: 1.5em;
+.container-welcome{
+    background-color: #f4f7fd ;
     text-align: center;
-    line-height: 1.3em;
-}
+    box-sizing: border-box;
+    max-height: 2.5rem;
+}*/
