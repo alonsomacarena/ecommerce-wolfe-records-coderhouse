@@ -42,3 +42,7 @@
 .dropdown-divider{
     border-top: 1px solid #fe207b;
 }
+.navbar-toggler{
+    background-color: white;
+    color: black;
+}

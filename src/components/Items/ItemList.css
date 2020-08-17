@@ -1,0 +1,62 @@
+.list-items{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 2em;
+}
+.items{
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+.item-artist{
+    color: #48c3b3;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-style: italic;
+    padding-top: 0.5em;
+}
+.item-album{
+    color: #f4f7fd;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: inline-block;
+    padding-top: 2em;
+}
+.item-price{
+    color: #f4f7fd;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.buttons-price-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px white ;
+    width: 100%;
+    margin-top: 0.5em;
+}
+.details-button, .cart-button{
+    color: #fe207b;
+    background-color: transparent;
+    border: none;
+    align-self: center;
+}
+.details-button{
+    font-size: 3rem;
+}
+.cart-button{
+    font-size: 1.5rem;
+}
+.div-imagen{
+    background-color: gray;
+    height: 9em;
+    width: 100%;
+}

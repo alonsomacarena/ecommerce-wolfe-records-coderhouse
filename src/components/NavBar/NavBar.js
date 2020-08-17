@@ -23,16 +23,16 @@ const NavBar = () => {
             Vinilos
           </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a className="dropdown-item" href="#">Rock</a>
-            <a className="dropdown-item" href="#">Pop</a>
-            <a className="dropdown-item" href="#">Soul/Jazz</a>
-            <a className="dropdown-item" href="#">Hip-Hop/Trap</a>
-            <a className="dropdown-item" href="#">Alternativo</a>
-            <a className="dropdown-item" href="#">Country/Folk</a>
-            <a className="dropdown-item" href="#">Latino</a>
+            <a className="dropdown-item" href="#">rock & pop</a>
+            <a className="dropdown-item" href="#">hip-hop/rap</a>  
+            <a className="dropdown-item" href="#">alternativo</a>  
+            <a className="dropdown-item" href="#">blues/jazz</a>         
+            <a className="dropdown-item" href="#">soul/funk</a>
+            <a className="dropdown-item" href="#">en español</a>
+            <a className="dropdown-item" href="#">banda sonora</a>
             <div className="dropdown-divider"/>
-            <a className="dropdown-item" href="#">Nuevos Lanzamientos</a>
-            <a className="dropdown-item" href="#">Ofertas</a>
+            <a className="dropdown-item" href="#">nuevos lanzamientos</a>
+            <a className="dropdown-item" href="#">ofertas</a>
           </div>
         </li>
         <li className="nav-item ">

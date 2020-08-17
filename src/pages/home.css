@@ -3,18 +3,8 @@ body{
     font-family: 'Comfortaa', cursive;
     text-transform: uppercase;
 }
-
-/*.welcome{
-    color: white;
-    font-size: 1rem;
-    font-weight: 700;
-    font-style: bold;
-    display: inline-block;
-    padding-top: 0.5em;
+.filter-itemlist-container{
+    display: flex;
+    flex-flow: row;
+    margin: 0 auto;
 }
-.container-welcome{
-    background-color: #f4f7fd ;
-    text-align: center;
-    box-sizing: border-box;
-    max-height: 2.5rem;
-}*/

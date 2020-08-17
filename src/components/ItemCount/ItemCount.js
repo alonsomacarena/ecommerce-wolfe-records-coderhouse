@@ -29,7 +29,7 @@ const ItemCount = ({initial, min, max}) =>{
         <p className="msj-quantity">{count === max ? "*Ha llegado al máximo de productos disponibles" 
 : "*Quedan" + " " + (max -  count) + " " + "productos disponibles"}</p>
         </div>
-        <button className="button-addToCart" disabled={count === max || count < min}>Agregar al Carrito</button>
+        <button className="button-addToCart" disabled={count > max || count < min}>Agregar al Carrito</button>
         </div>
     )
 }
