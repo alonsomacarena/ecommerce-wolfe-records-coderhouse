@@ -1,6 +1,5 @@
 
 import React, {useEffect, useState } from 'react';
-import ListItem from '../Items/ListItem.js';
 import itemStore from '../Items/Item.js';
 import {useParams,Link} from 'react-router-dom';
 
@@ -10,25 +9,6 @@ const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(true);
     // ejecutar un console.log con mounted ItemList para ver si esta ok
   
-   
-      const item = new Promise ((res, rej) => {
-      setTimeout(()=>{
-      res([items])
-      },3000);
-      });
-  
-    useEffect(() => {
-      console.log('mounted ItemDetailContainer');
-      //itemStore es la funcion con los productos de item.js
-      fetch('../Items/ListItem.js')
-      item.then(res => {
-       //la respuesta es un array con los productos de item.js
-       setLoading(false);
-       setItems(res); 
-       console.log(res)
-      });
-    }, []);
-    console.log(items)
   
     function ItemDetailCont({ items }) {
       return ( <>
@@ -53,7 +33,6 @@ const ItemDetailContainer = () => {
       return(
           <>
        {/* <ItemDetailCont items={items}></ItemDetailCont>*/}
-        {loading ? <p style={{color:"white", textAlign:"center"}}>Loading ....</p>:null}
         </>
       )
   }
