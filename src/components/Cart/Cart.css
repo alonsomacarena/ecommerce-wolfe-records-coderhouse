@@ -1,0 +1,98 @@
+.cart-disclaimer{
+    color: #f4f7fd;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+    display: inline-block;
+    padding-top: 2em;
+    padding-left: 0.9em;
+    margin: 0 auto 1em auto;
+}
+.button-inicio{
+    background-color: #48c3b3;
+    color: #f4f7fd;
+    padding: 0.5em 1em;
+    margin: 1em 2em;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.cart-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.7em auto;
+    box-sizing: border-box;
+}
+.cart-item{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    justify-content: start;
+    align-items: center;
+    box-sizing: border-box;
+    border-right: solid 1px white ;
+    border-left: solid 1px white ;
+}
+.cart-item-text-container{
+    box-sizing: border-box;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-right: solid 1px white ;
+    line-height: 0.7em;
+}
+.cart-item-album{
+    color: #f4f7fd;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.cart-item-artist{
+    color: #48c3b3;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-style: italic;
+    line-height: 1.2em;
+}
+.cart-item-image{
+    width: 30%;
+}
+.cart-item-price{
+    color: #fe207b;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.cart-item-quantity{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: #f4f7fd;
+    font-size: 0.8rem;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 2em;
+}
+.cart-item-quantity-number{
+    color: #fe207b;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 0.5em;
+}
+.delete-button{
+    color: #fe207b;
+    background-color: transparent;
+    border: none;
+    align-self: left;
+    font-size: 1.5em;
+}

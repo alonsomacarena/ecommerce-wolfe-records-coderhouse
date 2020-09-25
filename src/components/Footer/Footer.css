@@ -1,0 +1,14 @@
+.footer{
+    background-color: #302848;
+    padding: 1em;
+    margin: 2em auto 0em auto;
+    box-sizing: border-box;
+}
+
+.copyright{
+    color: #fe207b;
+  }
+.footer-copyright{ 
+      margin: 1em auto;
+      color: #eeeeee;
+  }

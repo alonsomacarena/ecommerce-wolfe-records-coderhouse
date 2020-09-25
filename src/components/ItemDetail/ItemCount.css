@@ -1,0 +1,58 @@
+.container-total{
+    background-color: transparent;
+    display: flex;
+    flex-flow: column;
+}
+
+.title-itemCount{
+    color: #f4f7fd;
+    padding-top: 0.8em;
+    font-size: 1.3rem;
+    font-weight: 700;
+    align-self: center;
+    display: inline-block;
+}
+/*rgba(244,247,253,0.8);*/
+.button-container{
+    background-color:#302848;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0.1em 0.5em;
+    margin: 1em 0em 2em 0em;
+    border: solid 0.01em #f4f7fd;
+}
+.button-icon{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fe207b;
+    background-color: transparent;
+    border: none;
+    align-self: center;
+}
+.quantity-item{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #48c3b3;
+    align-self: center;
+    display: inline-block;
+    padding-top: 0.5em;
+}
+.button-addToCart{
+    background-color: #fe207b;
+    color: #f4f7fd;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.msj-quantity{
+    color: #f4f7fd;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: none;
+    text-align: center;
+}
