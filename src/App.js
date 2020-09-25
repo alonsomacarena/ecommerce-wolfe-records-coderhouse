@@ -15,18 +15,23 @@ function App({categories}) {
     <CartProvider>
   <NavBar categories={categories} />
   <Switch>
+
     <Route exact path="/">
     <Home />
     </Route>
+
     <Route path="/categories/:categoryId">
     <Home categories={categories} />
     </Route>
-    <Route path="/items:id">
+
+    <Route path="/item/:id">
     <ItemDetail />
     </Route>
+
     <Route path="/cart">
     <Cart/>
     </Route> 
+
   </Switch>
   </CartProvider> 
   <Footer/>

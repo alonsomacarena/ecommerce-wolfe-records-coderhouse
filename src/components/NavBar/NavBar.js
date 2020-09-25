@@ -28,7 +28,7 @@ function NavBar (){
     </button>
   
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav mr-auto col-sm-8">
+      <ul className="navbar-nav mr-auto col-sm-12">
       <li className="nav-item ">
           <Link className="nav-item" to={`/`}>
           <button type="button" className="nav-link" style={{border:"none", backgroundColor:"transparent", textTransform:"uppercase"}} >Home</button></Link>

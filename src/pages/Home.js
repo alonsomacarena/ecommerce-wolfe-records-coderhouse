@@ -5,7 +5,6 @@ import ItemDetailContainer from '../components/ItemDetail/ItemDetailContainer';
 import ItemList from '../components/Items/ItemList';
 import { useParams } from 'react-router-dom';
 
-import * as firebase from 'firebase/app';
 import 'firebase/firestore';
 import { getFirestore } from '../firebase';
 

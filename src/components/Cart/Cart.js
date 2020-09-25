@@ -6,25 +6,25 @@ import './Cart.css';
 
 function CartRender (){
 
-const {cartArray} = useCartContext();
+const {cartArray, price, cleanCart} = useCartContext();
 
 return(
     <>
-    <ul className="cart-list col-sm-12" >
-{cartArray.map((item =>  
-    <li className="cart-item col-sm-4">
-    <img src={`/images/${item.image}`} className="cart-item-image" key={item.image} />
-    <div className="cart-item-text-container">
-    <p className="cart-item-album" key={item.album}>{item.album}</p>
-    <p className="cart-item-artist" key={item.artist}>{item.artist}</p>
-   <p className="cart-item-price" key={item.price}>$AR {item.price}</p>
-   </div>
-<div className="cart-item-quantity">Cantidad: 
-<p className="cart-item-quantity-number" key={item.quantity}>{item.quantity}</p></div>
-<button type="button" className=" delete-button" ><i className="fas fa-trash-alt"/></button>
-   </li>
-))}
-</ul>      
+    <div className="container-list-cart col-sm-12">
+        <ul className="cart-list col-sm-10">
+        {cartArray.map((item => 
+        <li className="cart-item col-sm-12">
+        <p className="cart-item-quantity-number">{item.quantity}</p>
+        <p className="cart-item-album">{item.album}</p>
+        <p className="cart-item-artist">{item.artist}</p>
+            <p className="cart-item-price">$ {item.price} </p>
+            <button type="button" className=" delete-button">
+                <i className="fas fa-trash-alt"/> {cleanCart()}
+                </button>
+        </li>))}
+        <p className="total-cart col-sm-12">Total $ {price()}</p>   
+        </ul>
+    </div>    
     </>
     )
 }
