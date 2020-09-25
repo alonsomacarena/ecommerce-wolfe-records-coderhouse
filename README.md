@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Trabajo final React Js CoderHouse Wolfe Records E-commerce
 
-## Available Scripts
+### Project by: Macarena Alonso
 
-In the project directory, you can run:
+## Instrucciones de instalación
 
-### `npm start`
+``` 
+	npm install
+	npm run start
+```
+Abrir navegador en [localhost](http://localhost:3000)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features Especiales
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Bootstrap 
+El proyecto esta maquetado usando como base la estructura de columnas de Bootstrap. Además se uso para el maquetado del NavBar que incluye un dropdown-item y un navbar-toggler para el uso en Mobile y Tablet.
 
-### `npm test`
+### Media Queries
+El proyecto esta pensado como un Responsive Design. Esto se logró al usar Media Queries para adaptar cuestiones de styling en diferentes dispositivos. 
+Las Media Queries usadas son:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ - Mobile: ```@media (min-width: 320px) and (max-width: 480px){}```
+ - Tablet: ```@media (min-width: 768px) and (max-width: 1024px){}```
 
-### `npm run build`
+## Consideraciones
+### Sección Contacto
+La sección contacto esta conformada por un formulario que funciona con la misma metodología que el formulario de Checkout. Toda la información que complete el cliente será almacenada en Firebase en un documento dentro de una colección llamada contactMessages.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ItemList
+El botón del cart que está en cada item no funciona como botón de comprar sino que funciona como link hacia el preview del cart.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### ItemCount / Quantity / Delete Button Cart
+El itemCount esta pensado para que el cliente seleccione la cantidad que quiere comprar de cada producto. Por lo tanto, el botón de Delete en el Cart elimina la totalidad del producto. Si desea bajar/subir la cantidad deberá eliminar dicho producto y volver a "comprarlo" desde el Detalle del producto seleccionando nuevamente la cantidad que quiere. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Información Extra
 
-### `npm run eject`
+#### Api Key Firebase
+La Api Key del proyecto en Firebase estará copiada en el cuerpo del chat de la entrega del Proyecto Final de la plataforma de CoderHouse
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Email Personal
+alonsomacarena@gmail.com 
