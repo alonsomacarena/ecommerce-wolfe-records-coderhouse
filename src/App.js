@@ -8,22 +8,18 @@ import ItemDetail from './components/ItemDetail/ItemDetail';
 import Cart from './components/Cart/Cart.js';
 import { CartProvider } from './components/Cart/CartContext';
 
-
-// Todos los componentes que esten encerrados por mi Provider (o sea, {children}), van a poder acceder a las propiedades que tengo definidas en mi Contexto.
-// Las propiedades que definí en mi contexto son: seriesArray, agregarSerie, quitarSerie
-
-// Entonces, CatalogoSeries y SeriesVistas, van a compartir mi array de series, que definí en el estado de mi contexto, como también, las funciones de agregarSerie y quitarSerie.
-
-
-function App() {
+function App({categories}) {
   return (
     <>
     <BrowserRouter>
     <CartProvider>
-  <NavBar />
+  <NavBar categories={categories} />
   <Switch>
     <Route exact path="/">
     <Home />
+    </Route>
+    <Route path="/categories/:categoryId">
+    <Home categories={categories} />
     </Route>
     <Route path="/items:id">
     <ItemDetail />
