@@ -23,7 +23,8 @@ export function CartProvider({ initialValue = [], children}) {
   }
 
   function cleanCart(removeItem) {
-    const itemsFiltered = cartArray.filter(item => item.artist !== removeItem.artist);
+    const itemsFiltered = cartArray.filter(item => item.artist !== removeItem.artist
+      );
     setCartArray(itemsFiltered);
   }
 
