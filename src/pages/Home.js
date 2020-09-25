@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './home.css'
 import ItemListFilter from '../components/Items/ItemListFilter';
-import ItemDetailContainer from '../components/ItemDetail/ItemDetailContainer';
 import ItemList from '../components/Items/ItemList';
 import { useParams } from 'react-router-dom';
 

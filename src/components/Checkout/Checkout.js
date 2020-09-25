@@ -29,7 +29,7 @@ function Checkout({onChange}) {
                     <label htmlFor="inputEmail" className="label-form">Email</label>
                     <input type="email" className="form-control" placeholder="Ingresa tu email" value={form.email} onChange={(evt)=> onInputChange('email', evt)}/>
                 </div>
-            <div class="col-sm-6">
+            <div className="col-sm-6">
                 <label htmlFor="inputEmailRetry" className="label-form">Repite tu Email</label>
                 <input type="email" className="form-control" placeholder="Repite tu email" value={form.email2} onChange={(evt)=> onInputChange('email2', evt)}/>
             </div>

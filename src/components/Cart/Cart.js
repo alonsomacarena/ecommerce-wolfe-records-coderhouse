@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import {useCartContext} from './CartContext.js';
 import './Cart.css';
 import Checkout from '../Checkout/Checkout';
+import MessageFinal from '../Checkout/MessageFinal';
 
 import * as firebase from 'firebase/app';
 import 'firebase/firestore';
@@ -13,7 +14,6 @@ function Cart (){
 const {cartArray, price, cleanCart, cartEmpty} = useCartContext();
 const [checkout, setCheckout] = useState(false);
 const [userInfo, setUserInfo]= useState(null);
-const [loading, setLoading]= useState(false);
 const [orderId, setOrderId]= useState(null);
 
 function updateUserInfo(userInfo){
@@ -22,24 +22,27 @@ function updateUserInfo(userInfo){
 
 async function createOrder(){
     const db = getFirestore();
-    const items = cartArray.map(item =>({id: item.id, qty:item.quantity}))
-
     const orders = db.collection('orders');
 
     const newOrder = {
         buyer: userInfo,
-        items: cartArray,
+        items: cartArray.map(item =>({id: item.id, qty:item.quantity, itemPrice: item.price, artist:item.artist, album:item.album})),
         date: firebase.firestore.FieldValue.serverTimestamp(),
         total: price(),
     }
 
     try {
         const {id}= await orders.add(newOrder);
+        setOrderId(id)
     //corrobora que guarde el id de la nueva orden
-    console.log('id');
+    console.log('id', id);
     } catch(err){
         //se setea feedback para el user
         console.log('error')
+    }
+
+    if(orderId){
+        return <MessageFinal orderId={orderId}></MessageFinal>
     }
     
 }
@@ -81,12 +84,12 @@ return(
     {cartEmpty > 0 && 
     <>
     <CartRender></CartRender>
-    <div class="d-flex flex-row-reverse mt-3">
+    <div className="d-flex flex-row-reverse mt-3">
         {!checkout ?
-        (<button type="button" class="button-checkout"
+        (<button type="button" className="button-checkout"
         onClick={()=> {setCheckout(true);}}>
             Comprar</button>):
-            (<button type="button" class="button-checkout"
+            (<button type="button" className="button-checkout"
             onClick={()=> {setCheckout(false);}}>
                 Cambiar mi orden</button>)}
         </div>
@@ -95,12 +98,11 @@ return(
     {cartEmpty > 0 && checkout &&
     <>
     <Checkout onChange={updateUserInfo} ></Checkout>
-    <div class="d-flex flex-row-reverse mt-3">
-    <button type="button" class="button-checkout"
-    disabled={!userInfo && !loading} onClick={createOrder}>
+    <div className="d-flex flex-row-reverse mt-3">
+    <button type="button" className="button-checkout"
+    disabled={!userInfo} onClick={createOrder}>
             Finalizar compra</button>
-        </div>
-    {loading && <p style={{color:"white"}}>Procesando orden...</p>}  
+    </div>
     </>
     }
     </>

@@ -19,7 +19,8 @@ export function CartProvider({ initialValue = [], children}) {
   }
 
   function size() {
-    return cartArray.reduce((prev, next) => prev + (0 + next.quantity), 0);
+    const itemsReduce = cartArray.reduce((prev, next) => prev + (0 + next.quantity), 0);
+    setTotals(itemsReduce);
   }
 
   function cleanCart(removeItem) {
