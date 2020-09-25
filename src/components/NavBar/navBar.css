@@ -3,6 +3,8 @@
     text-transform: uppercase;
     padding: 2em;
     margin: 0 auto;
+    box-sizing: border-box;
+    max-height: 7em;
 }
 .navbar-nav{
     display: flex;
@@ -36,13 +38,19 @@
 }
 .dropdown-item:hover{
     background-color: #302848;
-    color: #eeeeee;
+    color: #f4f7fd;
     font-weight: 600;
 }
 .dropdown-divider{
     border-top: 1px solid #fe207b;
 }
 .navbar-toggler{
-    background-color: white;
+    background-color: #f4f7fd;
     color: black;
+}
+.navbar-logo{
+    width: 25%;
+}
+#cd-cart-trigger{
+    color: #f4f7fd;
 }

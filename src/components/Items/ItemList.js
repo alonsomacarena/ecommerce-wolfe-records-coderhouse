@@ -1,43 +1,48 @@
 import React, {useEffect, useState } from 'react';
 import itemStore from './Item.js';
-import './ItemList.css';
+import './ListItem.css';
+import {Link} from 'react-router-dom';
+import {getFirestore} from '../../firebase';
 
+function ItemList () {
 
-const ItemList = () => {
-
-  function ProductList({ products }) {
-    return <ul className="list-items col-sm-9">
-     {products.map((p) => <li className="items col-sm-3" key={p.id}>
-       <div className="div-imagen">Acá iria la imagen</div>
+    const [items, setItems] = useState([]);
+    //const [loading, setLoading] = useState(true);
+    // ejecutar un console.log con mounted ItemList para ver si esta ok
+    useEffect(() => {
+      console.log('mounted ItemList');
+      const db = getFirestore();
+      const itemCollection = db.collection('items');
+      //itemStore es la funcion con los productos de item.js
+     itemStore().then(res => {
+       //la respuesta es un array con los productos de item.js
+        setItems(res); 
+        console.log(res)
+       //setLoading(false); // Set state -> Render
+      });
+    }, []);
+  
+    function ProductList({ items }) {
+      return <ul className="list-items col-sm-9">
+       {items.map((p) =>
+     <li className="items col-sm-3" key={p.id}>
+       <img src={`/images/${p.image}`} className="item-image" />
        <h3 className="item-album">{p.album}</h3>
        <h4 className="item-artist">{p.artist}</h4>
        <div className="buttons-price-container">
       <p className="item-price">$AR {p.price}</p>
-      <button type="button" href="#" className="details-button">+</button>
-      <button type="button" href="#" className="cart-button"><i className="fas fa-shopping-cart"/></button>
+     <Link to={`/items${p.id}`}>
+      <button type="button" className="details-button" ><i className="fas fa-plus-circle"/></button></Link>
+      <Link to={`/cart`}>
+      <button type="button" className="cart-button"><i className="fas fa-shopping-cart"/></button></Link>
        </div></li>)}
-    </ul>
+      </ul>
+    };
+  
+    return(
+        <ProductList items={items}>
+        </ProductList>
+      )
   }
-  function ProductsRender() {
-    const [products, setProducts] = useState([]);
-    //const [loading, setLoading] = useState(true);
-    // Ejecutar un hola al inicio
-    useEffect(() => {
-      console.log('Hola');
-     itemStore().then(res => {
-        setProducts(res); // Set state -> Render
-       //setLoading(false); // Set state -> Render
-      });
-    }, []);
-
-    return <ProductList products={products}></ProductList>
-  }
-
-  return <ProductsRender/>
-  
-
-}
-  
-  export default ItemList;
-
-  
+    
+    export default ItemList;

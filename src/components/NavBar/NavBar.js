@@ -1,11 +1,19 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './navBar.css'
 import CartIcon from './CartIcon';
+import {Link} from 'react-router-dom';
 
-const NavBar = () => {
+function NavBar (){
+
+  const [quantitySelected, setQuantitySelected] = useState();
+
+  function sincronizeCounter(quantitySelected) {
+    setQuantitySelected(quantitySelected);
+  }
+
   return(
     <nav className="navbar navbar-expand-lg ">
-    <a className="navbar-brand" href="#">Wolfe Records</a>
+    <a className="navbar-brand col-sm-3" href="#"><img src={`/images/wolfe-logo-aqua.png`} className="navbar-logo" />Records</a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -39,7 +47,7 @@ const NavBar = () => {
           <a className="nav-link" href="#">Contacto</a>
         </li>
         <li className="nav-item ">
-        <CartIcon/>
+        <CartIcon  />
         </li>
       </ul>
       <form className="form-inline my-2 my-lg-0">

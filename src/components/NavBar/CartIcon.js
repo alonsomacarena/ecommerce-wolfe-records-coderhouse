@@ -1,8 +1,20 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import {Link} from 'react-router-dom';
+import { useCartContext } from '../Cart/CartContext';
 
 function CartIcon () {
-    return (
-    <i id="cd-cart-trigger"><a href="#" className="fas fa-shopping-cart nav-link cd-img-replace"/></i>
+
+const {totals} = useCartContext();
+
+   return (   
+        <>   
+        <Link to={`/cart`}>  
+    <i id="cd-cart-trigger"><a className="fas fa-shopping-cart nav-link cd-img-replace" >
+   {totals === 0 && <span style={{display:"flex", flexFlow:"row"}}></span>}
+   {totals > 0 && <span style={{display:"flex", flexFlow:"row"}}>{totals}</span>}
+    </a></i>
+    </Link>
+    </>
     );
 }
 
