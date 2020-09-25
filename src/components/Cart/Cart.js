@@ -105,6 +105,8 @@ return(
     </div>
     </>
     }
+    {orderId && checkout && 
+    <p style={{color:"white"}} >Tu numero de orden es: {orderId}</p>}
     </>
 )
     

@@ -22,7 +22,7 @@ function NavBar (){
 
   return(
     <nav className="navbar navbar-expand-lg ">
-    <a className="navbar-brand col-sm-3" href="#"><img src={`/images/wolfe-logo-aqua.png`} className="navbar-logo" />Records</a>
+    <h1 className="navbar-brand col-sm-3" ><img src={`/images/wolfe-logo-aqua.png`} className="navbar-logo" alt="logo wolfe records" />Records</h1>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -38,13 +38,13 @@ function NavBar (){
           <button type="button" className="nav-link" style={{border:"none", backgroundColor:"transparent", textTransform:"uppercase"}} >Nosotros</button></Link>
         </li>
         <li className="nav-item dropdown ">
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" style={{border:"none", backgroundColor:"transparent", textTransform:"uppercase"}} className="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Vinilos
-          </a>
+          </button>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown">
           {categories.map((cat)=>
-          <Link to={`/categories/${cat.name}`}>
-            <li key={cat.name}>{cat.name}</li></Link>)}
+          <Link to={`/categories/${cat.name}`} key={cat.id} >
+            <p key={cat.name}>{cat.name}</p></Link>)}
           </div>
         </li>
         <li className="nav-item ">

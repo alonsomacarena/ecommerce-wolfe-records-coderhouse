@@ -6,7 +6,7 @@ function ItemList ({items}) {
 
       return <ul className="list-items col-sm-9">
        {items.map((p) =>
-     <li className="items col-sm-3" key={p.categories}>
+     <li className="items col-sm-3" key={p.id}>
        <img src={`/images/${p.image}`} className="item-image" alt={p.imageAlt} />
        <h3 className="item-album">{p.album}</h3>
        <h4 className="item-artist">{p.artist}</h4>

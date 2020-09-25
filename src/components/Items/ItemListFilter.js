@@ -21,7 +21,7 @@ function ItemListFilter (){
     return(
         <div className="list-filter col-sm-3" style={styles}> 
         {categories.map((cat)=>
-          <Link to={`/categories/${cat.name}`}>
+          <Link to={`/categories/${cat.name}`} key={cat.id}>
             <li key={cat.name}>{cat.name}</li></Link>)}
         </div>
     )

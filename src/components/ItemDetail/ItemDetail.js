@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useContext } from 'react';
+import React, {useEffect, useState } from 'react';
 import './ItemDetail.css';
 import ItemCount from './ItemCount.js';
 import { useParams } from 'react-router-dom';
@@ -24,7 +24,7 @@ const getItem = (id) =>{
       {imageAlt:'la la land soundtrack original pelicula', id: 'd2Asw5vCAtEbX0rz4brq', artist: 'la la land pelicula', album: 'la la land', genre:'banda de sonido', price:1850, stock:3, image:"/la-la-land.jpg", sello:'interscope records', date:"16 DEC 2016", imageDetails:'/la-la-land-details.png'}, 
       {id: 'qvMbbZRnPXlwebBVP3vc',album:"the blues",artist:"bb king",categorie:"blues",categoryId:"blues",date:"14 JUN 2018",image:"/bb-king-blues.jpg",imageAlt:"bb king vinilo the blues",imageDetails:"/bb-king-blues.jpg",price:"1570",sello:"vinyl passion",stock:"1"},
       {id: 'UCdakGDjltfIdypNOV3q',album:"electric light standard",artist:"james bay",categorie:"lanzamientos",categoryId:"lanzamientos",date:"24 JUL 2020",image:"/james-bay.jpg",imageAlt:"james bay vinilo electric light standard",imageDetails:"/james-bay.jpg",price:"3050",sello:"virgin emi",stock:"4"}, 
-      {imageAlt:'lauv vinilo how im feeling',id:'AT600scU9gj2dMFe4M2I', album:"How I’m Feeling",artist:"lauv",categorie:"lanzamientos",categoryId:"lanzamientos",date:"06 MAR 2020",image:"/lauv-feelings.jpg",imageAlt:"lauv vinilo how im feeling",imageDetails:"/lauv-feelings-details.png",price:3180,sello:"awal",stock:5},
+      {id:'AT600scU9gj2dMFe4M2I', album:"How I’m Feeling",artist:"lauv",categorie:"lanzamientos",categoryId:"lanzamientos",date:"06 MAR 2020",image:"/lauv-feelings.jpg",imageAlt:"lauv vinilo how im feeling",imageDetails:"/lauv-feelings-details.png",price:3180,sello:"awal",stock:5},
       {id:'2xEjSdQU74qLGnwuLLmO',album:"discutible",artist:"babasonicos",categorie:"rock argentino",categoryId:"rock argentino",date:"12 OCT 2018",image:"/babasonicos-discutible.jpg",imageAlt:"babasonicos vinilo discutible",imageDetails:"/babasonicos-discutible.jpg",price:2420,sello:"sony music",stock:2},
     ].find(p => p.id === id );
     res(items);
@@ -33,7 +33,7 @@ const getItem = (id) =>{
 }
 
 
-function ItemDetails ({}){
+function ItemDetails (){
 
 
   const [quantitySelected, setQuantitySelected] = useState();

@@ -19,11 +19,8 @@ export default function ItemCount({initial, min, max, onAdd, onChange}){
             <button className="button-icon" disabled={count >= max} onClick={addValue}>+</button>  
         </div>
         <p className="msj-quantity">{count === max ? "*No quedan más productos disponibles" 
-: "*Quedan" + " " + (max -  count) + " " + "productos disponibles"}</p>
+: "*Quedan " + (max -  count) + " productos disponibles"}</p>
         </div>
-        {/*<Link to={`/cart`}> 
-       <button className="button-addToCart" >Agregar al Carrito ({count})</button>
-    </Link>*/}
    </>     
     )
 }
