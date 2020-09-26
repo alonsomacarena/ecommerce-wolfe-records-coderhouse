@@ -101,3 +101,68 @@ h2{
     margin-bottom: 3em;
     margin: 2em 0 3em 9em;
 }
+/* //responsive mobile -------------------*/
+@media (min-width: 320px) and (max-width: 480px){
+.hero-banner{
+    max-width: 480px;
+    height: 120px;
+}
+h2{
+    font-size: 4rem;
+    padding: 0.2em 0;
+}
+.h2-nosotros{
+    font-size: 3rem;
+    padding: 0.4em 0;
+}
+.container-nosotros{
+    display: flex;
+    flex-flow: column;
+}
+.container-text-nosotros{
+    margin-top: 2em;
+}
+.subtitle-text{
+    font-size: 1.5rem;
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-bottom: 0.5em;
+}
+.text-nosotros{
+    word-spacing: -1px;
+    line-height: 25px;
+    padding-left: 0em;
+    padding-right: 0em;
+    text-align: left;
+}
+.h2-contacto{
+    font-size: 3.2rem;
+    padding: 0.4em 0;
+}
+.text-nosotros {
+    word-spacing: -1px;
+    line-height: 25px;
+    padding-left: 0em;
+    padding-right: 0em;
+    text-align: left;
+}
+.contact-text {
+    margin: 2em 1em;
+    padding-right: 0.7em;
+    box-sizing: border-box;
+    text-align: center;
+}
+.button-message{
+    margin: 0 1em 2em 0;
+}
+.message-client{
+    font-size: 1.5rem;
+    margin: 2em 0 1em 3em;
+}
+.message-client1{
+    font-size: 1.1rem;
+    margin-bottom: 2em;
+    margin: 2em 0 3em 2em;
+}
+}
+/*------------------ responsive mobile// */

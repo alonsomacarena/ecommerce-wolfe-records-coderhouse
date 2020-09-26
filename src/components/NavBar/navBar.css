@@ -54,3 +54,12 @@
 #cd-cart-trigger{
     color: #f4f7fd;
 }
+/* //responsive mobile -------------------*/
+@media (min-width: 320px) and (max-width: 480px){
+    .navbar{
+        max-width: 480px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+/*------------------ responsive mobile// */

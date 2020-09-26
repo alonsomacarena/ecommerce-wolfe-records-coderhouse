@@ -43,7 +43,7 @@ function Contacto (){
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6 col-md-9 hero-container">
-              <h2>Contacto</h2>
+              <h2 className="h2-contacto">Contacto</h2>
             </div>
           </div>
         </div>

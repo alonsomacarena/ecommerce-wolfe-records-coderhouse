@@ -66,7 +66,7 @@ function ItemDetails (){
   <h6 className="item-detail-artist">{item.artist}</h6>
   </div>
   <Link to={`/`}>
-   <button className="button-inicio" >Volver al Inicio</button></Link> 
+   <button className="button-inicio-cart" >Volver al Inicio</button></Link> 
    </div>
   <div className="col-sm-12 item-detail-container">
   <img src={`/images/${item.imageDetails}`}  className="col-sm-6 item-detail-image" alt={item.imageAlt}/>
