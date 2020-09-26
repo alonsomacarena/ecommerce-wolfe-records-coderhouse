@@ -85,3 +85,19 @@ h2{
     align-self: flex-end;
     margin: 0 24em 3em 0;
 }
+.contact-text{
+    margin: 3em 13em;
+    padding-right: 10em;
+}
+.message-client, .message-client1{
+    color: #f4f7fd;
+}
+.message-client{
+    font-size: 1.8rem;
+    margin: 2em 0 1em 7.5em;
+}
+.message-client1{
+    font-size: 1.5rem;
+    margin-bottom: 3em;
+    margin: 2em 0 3em 9em;
+}

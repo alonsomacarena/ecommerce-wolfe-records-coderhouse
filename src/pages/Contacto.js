@@ -48,13 +48,19 @@ function Contacto (){
           </div>
         </div>
       </section>
+      <p className="col-sm-8 text-nosotros contact-text">
+          Si tenes alguna consulta acerca de nuestros productos o si queres comentarnos algo, contactate con nosotros!
+      </p>
       <ContactForm onChange={updateUserInfo} ></ContactForm>
     <div className="d-flex flex-row-reverse mt-3">
     <button type="button" className="button-message"
     disabled={!userInfo} onClick={createMessage}>
             Enviar mensaje</button>        
     </div>  
-
+    {messageId && <>
+    <p className="col-sm-8 message-client" >Gracias por enviarnos tu mensaje!</p>
+    <p className="col-sm-8 message-client1" >En breve nos comunicaremos con vos acerca de tu consulta</p>
+    </>}
       </>
     )
 }
