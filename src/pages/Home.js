@@ -30,6 +30,15 @@ query.get().then((querySnapshot)=>{
 
     return (
       <>
+      <section className="hero-banner">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-lg-6 col-md-9 hero-container">
+            <h2>Vinilos</h2>
+          </div>
+        </div>
+      </div>
+    </section>
       {loading ? <p style={{color:"white", textAlign:"center"}}>Loading ....</p>:null}
   <div className="filter-itemlist-container col-sm-12">
       <ItemListFilter/>

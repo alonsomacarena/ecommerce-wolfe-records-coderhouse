@@ -60,3 +60,16 @@
     height: 9em;
     width: 100%;
 }
+.list-filter{
+    margin-top: 2em;
+    line-height: 50px;
+}
+.list-filter-item{
+    color: #f4f7fd;
+    list-style: none;
+}
+.list-filter-item:hover{
+    color: #fe207b;
+    list-style: none;
+    text-decoration: none;
+}

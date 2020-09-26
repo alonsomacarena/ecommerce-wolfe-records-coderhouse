@@ -1,10 +1,10 @@
 import React,{useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
+import './ItemList.css';
 
 import 'firebase/firestore';
 import { getFirestore } from '../../firebase';
 
-const styles={ color:"white", marginTop: 30, marginLeft:10}
 
 function ItemListFilter (){
 
@@ -19,10 +19,12 @@ function ItemListFilter (){
   },[]);
 
     return(
-        <div className="list-filter col-sm-3" style={styles}> 
+        <div className="list-filter col-sm-3"> 
         {categories.map((cat)=>
-          <Link to={`/categories/${cat.name}`} key={cat.id}>
-            <li key={cat.name}>{cat.name}</li></Link>)}
+          <Link className="list-filter-item" to={`/categories/${cat.name}`} key={cat.id}>
+            <li className="list-filter-item" key={cat.name}>{cat.name}</li></Link>)}
+            <Link className="list-filter-item" to={`/`}>
+            <li className="list-filter-item" key="categoria" >Todas</li></Link>
         </div>
     )
 }

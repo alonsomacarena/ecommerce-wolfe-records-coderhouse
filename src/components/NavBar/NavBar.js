@@ -43,8 +43,11 @@ function NavBar (){
           </button>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown">
           {categories.map((cat)=>
-          <Link to={`/categories/${cat.name}`} key={cat.id} >
-            <p key={cat.name}>{cat.name}</p></Link>)}
+          <Link className="dropdown-item" to={`/categories/${cat.name}`} key={cat.id} >
+            <span className="dropdown-item" key={cat.name}>{cat.name}</span></Link>)}
+            <div className="dropdown-divider"></div>
+            <Link className="dropdown-item" to={`/`}>
+            <span className="dropdown-item" key="categoria" >Todas</span></Link>
           </div>
         </li>
         <li className="nav-item ">
