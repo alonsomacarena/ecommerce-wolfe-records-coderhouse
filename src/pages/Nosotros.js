@@ -13,7 +13,7 @@ function Nosotros (){
           </div>
         </div>
       </section>
-      <div className="container-nosotros col-sm-12">
+      <div className="container-nosotros col-lg-6 col-sm-12">
           <img className="image-us col-sm-6 col-md-11"
           src={`https://raw.githubusercontent.com/alonsomacarena/ecommerce-wolfe-records-coderhouse/master/public/images/nosotros.jpg`}  alt="vinyl player"/>
           <div className="container-text-nosotros col-sm-6 col-md-12">
