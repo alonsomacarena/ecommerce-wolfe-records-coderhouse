@@ -34,7 +34,7 @@ function NavBar (){
           <button type="button" className="nav-link" style={{border:"none", backgroundColor:"transparent", textTransform:"uppercase"}} >Home</button></Link>
         </li>
         <li className="nav-item ">
-          <Link className="nav-item" to={`/Nosotros`}>
+          <Link className="nav-item" to={`/nosotros`}>
           <button type="button" className="nav-link" style={{border:"none", backgroundColor:"transparent", textTransform:"uppercase"}} >Nosotros</button></Link>
         </li>
         <li className="nav-item dropdown ">
@@ -51,7 +51,7 @@ function NavBar (){
           </div>
         </li>
         <li className="nav-item ">
-          <Link className="nav-item" to={`/Contacto`}>
+          <Link className="nav-item" to={`/contacto`}>
           <button type="button" className="nav-link" style={{border:"none", backgroundColor:"transparent", textTransform:"uppercase"}} >Contacto</button></Link>
         </li>
         <li className="nav-item ">

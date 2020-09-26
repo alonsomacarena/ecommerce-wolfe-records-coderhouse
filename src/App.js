@@ -7,6 +7,8 @@ import Footer from './components/Footer/Footer';
 import ItemDetail from './components/ItemDetail/ItemDetail';
 import Cart from './components/Cart/Cart.js';
 import { CartProvider } from './components/Cart/CartContext';
+import Nosotros from './pages/Nosotros';
+import Contacto from './pages/Contacto';
 
 function App({categories}) {
   return (
@@ -22,6 +24,14 @@ function App({categories}) {
 
     <Route path="/categories/:categoryId">
     <Home categories={categories} />
+    </Route>
+
+    <Route path="/nosotros">
+    <Nosotros />
+    </Route>
+
+    <Route path="/contacto">
+    <Contacto />
     </Route>
 
     <Route path="/item/:id">

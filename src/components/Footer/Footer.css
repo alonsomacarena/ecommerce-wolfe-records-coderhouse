@@ -1,14 +1,23 @@
 .footer{
     background-color: #302848;
-    padding: 1em;
-    margin: 2em auto 0em auto;
+    padding: 2em;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
     box-sizing: border-box;
+    max-height: 7em;
 }
 
 .copyright{
     color: #fe207b;
   }
 .footer-copyright{ 
-      margin: 1em auto;
       color: #eeeeee;
   }
+.button-back{
+  background-color: transparent;
+  color: #48c3b3;
+  border: none;
+}  
