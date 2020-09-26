@@ -12,7 +12,7 @@
     background-color: #48c3b3;
     color: #f4f7fd;
     padding: 0.5em 1em;
-    margin: 1em 2em;
+    margin: 1em 2em 3em 2em;
     border: none;
     font-size: 1rem;
     font-weight: 700;
@@ -97,4 +97,36 @@
     text-transform: uppercase;
     align-self: flex-end;
     margin: 0 7em;
+}
+.d-flex{
+    margin-bottom: 3em;
+}
+.container-icon-message{
+    margin: 1em auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-message{
+    width: 10%;
+}
+.message-order1{
+    color: #f4f7fd;
+    font-size: 2rem;
+    padding-top: 1.5em;
+}
+.message-order{
+    color: #f4f7fd;
+    font-size: 1.1rem;
+    margin: 3em auto 2em auto;
+}
+.order-span{
+    color: #48c3b3;
+    font-weight: 700;
+}
+.message-order-end{
+    margin: 0.5em auto 3em auto;
+    padding-right: 0;
+    font-size: 1.5rem;
 }

@@ -98,7 +98,14 @@ return(
     </div>   
     </>
     }
-    {checkout && orderId && <p style={{color:"white"}} >Tu numero de orden es: {orderId}</p>}
+    {checkout && orderId && <>
+    <div className="container-icon-message col-sm-10">
+        <img className="icon-message" src={`https://raw.githubusercontent.com/alonsomacarena/ecommerce-wolfe-records-coderhouse/1afec0d1eabddb175cd0e952700dabf2747cca2e/public/images/confirmed.svg`} alt="icon confirmed purchase" />
+    <p className=" message-order1" >Muchas gracias por comprar en Wolfe Records!</p>
+    </div>
+    <p className="col-sm-8 message-order">Tu numero de orden es: <span className="order-span">{orderId}</span></p>
+    <p className="col-sm-10 message-order-end" >En la brevedad te enviaremos un mail con los pasos correspondientes </p>
+    </>}
     </>
 )
     

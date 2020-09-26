@@ -6,7 +6,7 @@ body{
 .filter-itemlist-container{
     display: flex;
     flex-flow: row;
-    margin: 0 auto;
+    margin: 2em auto 3em auto;
 }
 .hero-banner {
     width:100%;
