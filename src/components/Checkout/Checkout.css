@@ -1,0 +1,17 @@
+.label-form{
+    color:#eeeeee;
+    padding-top: 0.5em;
+    text-shadow: 0 0 10px black;
+    font-weight: 700;
+  }
+  .form-control{
+    background-color: #302848;
+    color: #eeeeee;
+    border-radius:8px;
+    border: solid 1px #eeeeee;
+    padding:0.3em 0.5em;
+
+  }
+  form{
+      margin: 2em auto;
+  }

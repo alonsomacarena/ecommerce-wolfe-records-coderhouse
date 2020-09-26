@@ -41,10 +41,6 @@ async function createOrder(){
         console.log('error')
     }
 
-    if(orderId){
-        return <MessageFinal orderId={orderId}></MessageFinal>
-    }
-    
 }
 
 
@@ -105,7 +101,7 @@ return(
     </div>
     </>
     }
-    {orderId && checkout && 
+    {checkout && 
     <p style={{color:"white"}} >Tu numero de orden es: {orderId}</p>}
     </>
 )
