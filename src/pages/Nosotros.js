@@ -14,9 +14,9 @@ function Nosotros (){
         </div>
       </section>
       <div className="container-nosotros col-sm-12">
-          <img className="image-us col-sm-6"
+          <img className="image-us col-sm-6 col-md-11"
           src={`https://raw.githubusercontent.com/alonsomacarena/ecommerce-wolfe-records-coderhouse/master/public/images/nosotros.jpg`}  alt="vinyl player"/>
-          <div className="container-text-nosotros col-sm-6">
+          <div className="container-text-nosotros col-sm-6 col-md-12">
           <h3 className="title-nosotros" >
             <img src={`/images/wolfe-logo-aqua.png`} className="img-nosotros" alt="logo wolfe records" />Records</h3>
           <p className="subtitle-text">La tienda virtual de vinilos más grande de Argentina</p>

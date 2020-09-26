@@ -20,4 +20,18 @@
   background-color: transparent;
   color: #48c3b3;
   border: none;
-}  
+}
+/* //responsive mobile -------------------*/
+@media (min-width: 320px) and (max-width: 480px){
+  .footer{
+      max-width: 480px;
+  }
+}
+/*------------------ responsive mobile// */
+/* //responsive tablet -------------------*/
+@media (min-width: 768px) and (max-width: 1024px){
+.footer{
+  max-width: 1024px;
+}
+}
+/*------------------ responsive tablet// */
