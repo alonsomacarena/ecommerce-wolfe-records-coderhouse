@@ -71,7 +71,7 @@ return(
     <>
     <p className="cart-disclaimer col-sm-10">No ha seleccionado ningun producto</p>
     <Link to={`/`}>
-<button className="col-sm-2 col-md-4 button-inicio" >Comenzar compra</button></Link> 
+<button className="col-lg-2 col-md-4 button-inicio" >Comenzar compra</button></Link> 
     </>
     }
     {cartEmpty > 0 && 

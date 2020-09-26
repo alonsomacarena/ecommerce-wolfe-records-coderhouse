@@ -14,7 +14,7 @@ function App({categories}) {
   return (
     <>
     <BrowserRouter>
-    <CartProvider>
+  <CartProvider>
   <NavBar categories={categories} />
   <Switch>
 

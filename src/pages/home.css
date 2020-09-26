@@ -202,7 +202,15 @@ h2{
         margin-top: 1em;
     }
     .contact-text{
-        margin: 2em 0;
+        margin: 2em auto;
+        margin-right: 4em;
+        padding-right: 3em;
+    }
+    form{
+        margin: 1em auto;
+    }
+    .button-message{
+        margin: 0 11em 2em 0;
     }
 }
 /*------------------ responsive tablet// */

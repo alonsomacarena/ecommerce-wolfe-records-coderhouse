@@ -48,7 +48,7 @@ function Contacto (){
           </div>
         </div>
       </section>
-      <p className="col-sm-8 text-nosotros contact-text">
+      <p className="col-sm-8 col-md-10 text-nosotros contact-text">
           Si tenes alguna consulta acerca de nuestros productos o si queres comentarnos algo, contactate con nosotros!
       </p>
       <ContactForm onChange={updateUserInfo} ></ContactForm>

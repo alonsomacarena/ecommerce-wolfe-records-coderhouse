@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 
 function ItemList ({items}) {
 
-      return <ul className="list-items col-sm-9">
+      return <ul className="list-items col-lg-9 col-md-12">
        {items.map((p) =>
-     <li className="items col-sm-3" key={p.id}>
+     <li className="items col-lg-3 col-md-4" key={p.id}>
        <img src={`/images/${p.image}`} className="item-image" alt={p.imageAlt} />
        <h3 className="item-album">{p.album}</h3>
        <h4 className="item-artist">{p.artist}</h4>
