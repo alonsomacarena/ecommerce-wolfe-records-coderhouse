@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import {useCartContext} from './CartContext.js';
 import './Cart.css';
 import Checkout from '../Checkout/Checkout';
-import MessageFinal from '../Checkout/MessageFinal';
 
 import * as firebase from 'firebase/app';
 import 'firebase/firestore';
@@ -39,9 +38,7 @@ async function createOrder(){
     } catch(err){
         //se setea feedback para el user
         console.log('error')
-    }
-
-}
+    }}
 
 
 function CartRender (){
@@ -51,7 +48,7 @@ return(
     <div className="container-list-cart col-sm-12">
         <ul className="cart-list col-sm-10">
         {cartArray.map((item => 
-        <li className="cart-item col-sm-12">
+        <li className="cart-item col-sm-12" key={item.id}>
         <p className="cart-item-quantity-number">{item.quantity}</p>
         <p className="cart-item-album">{item.album}</p>
         <p className="cart-item-artist">{item.artist}</p>
@@ -97,12 +94,11 @@ return(
     <div className="d-flex flex-row-reverse mt-3">
     <button type="button" className="button-checkout"
     disabled={!userInfo} onClick={createOrder}>
-            Finalizar compra</button>
-    </div>
+            Finalizar compra</button>        
+    </div>   
     </>
     }
-    {checkout && 
-    <p style={{color:"white"}} >Tu numero de orden es: {orderId}</p>}
+    {checkout && orderId && <p style={{color:"white"}} >Tu numero de orden es: {orderId}</p>}
     </>
 )
     
